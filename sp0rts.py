@@ -19,4 +19,4 @@ for a in soup.find_all('table'):
     for z in a.find('td', 'wtwtime'):
         print('TIME: ' + z)
     for tv in a.find('td', 'wtwtvchannel'):
-        print('TV: ' + tv)
+        print('TV: ' + tv.text)
