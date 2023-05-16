@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/python3
+#!/usr/bin/env python3
 
 import urllib.request
 from collections import OrderedDict
@@ -34,4 +34,3 @@ for a in soup.find_all('table'):
             event['chans'].append(tv)
     sp0rts.append(event)
 print(tabulate(sp0rts, tablefmt='github'))
-print(sp0rts)
