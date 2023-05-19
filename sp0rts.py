@@ -7,8 +7,9 @@ from tabulate import tabulate
 
 emojis = {
     'MLB' : '⚾️',
-    'NBA' : '🏀'
-        }
+    'NBA' : '🏀',
+    'NHL' : '🏒'
+}
 
 fp = urllib.request.urlopen("https://sportsgamestoday.com/tv/what-to-watch.php")
 mybytes = fp.read()
