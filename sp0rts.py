@@ -19,7 +19,7 @@ fp.close()
 
 soup = BeautifulSoup(content, 'html.parser')
 sp0rts = []
-print('sp0rts:')
+print('sp0rts on tv today:')
 for a in soup.find_all('table'):
     event = OrderedDict()
     for x in a.find('th', 'wtwmatchuptitle'):
